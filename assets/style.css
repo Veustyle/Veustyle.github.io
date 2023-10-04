@@ -1,0 +1,184 @@
+@font-face {
+   font-family: Roboto;
+   src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+body {
+   position: relative;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: hsl(228, 45%, 44%);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Roboto;
+}
+.container {
+   display: flex;
+   height: 60%;
+   width: 640px;
+   background-color: whitesmoke;
+   border-radius: 30px;
+   padding: 10px 0;
+   display: flex;
+}
+.container h1 {
+   font-size: 36px;
+   margin: 40px 0 10px 0;
+}
+.container p {
+   font-size: 12px;
+   font-weight: 500;
+   padding: 0;
+   margin: 3px 0;
+}
+.part-left {
+   width: 110%;
+   height: 100%;
+   padding: 10px 40px;
+}
+.part-right {
+   width: 100%;
+   height: 100%;
+   background-image: url(images/illustration-sign-up-desktop.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.svg-yes {
+   width: 15px;
+   height: 15px;
+   margin-right: 10px;
+   transform: translateY(3px);
+}
+.form {
+   position: relative;
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+}
+.form label {
+   font-size: 12px;
+   font-weight: 700;
+   align-self: flex-start;
+}
+.form input {
+   border: 3px solid black;
+   margin-top: 5px;
+   border-radius: 6px;
+   padding: 10px;
+   text-align:start;
+}
+.form button {
+   cursor: pointer;
+   font-size: 11px;
+   font-weight: 700;
+   border: none;
+   border-radius: 6px;
+   padding: 12px 35px;
+   margin-top: 20px;
+   background-color: hsl(228, 45%, 44%);
+   color: whitesmoke;
+   box-shadow: 0px 7px 7px 9px rgba(255,157,118,0.22);
+}
+.form button:hover {
+   background: linear-gradient(to right, #ee63dc, #ff55ac, #ff5780, #f0635b, #d9713f);
+}
+.errors {
+   position: absolute;
+   top: 0;
+   right: 0;
+   font-size: 11px;
+   color: red;
+   opacity: 0;
+}
+.container-success {
+   display: none;
+   position: absolute;
+   inset: 20%;
+   background-color: whitesmoke;
+   border-radius: 15px;
+   padding: 30px;
+}
+.modal-button {
+   cursor: pointer;
+   font-size: 11px;
+   font-weight: 700;
+   border: none;
+   border-radius: 6px;
+   padding: 12px 35px;
+   margin-top: 20px;
+   background-color: hsl(228, 45%, 44%);
+   color: whitesmoke;
+   box-shadow: 0px 7px 7px 9px rgba(255,157,118,0.22);
+}
+.modal-button:hover {
+   background: linear-gradient(to right, #ee63dc, #ff55ac, #ff5780, #f0635b, #d9713f);
+}
+.span-email {
+   font-weight: 700;
+}
+/* BREAKPOINT */
+@media screen and (max-width: 639px) {
+   body {
+      height: auto;
+      background-color: whitesmoke;
+   }
+   .container {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      flex-flow: column-reverse;
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+   }
+   .container h1 {
+      margin: 40px 0 20px 22%;
+   }
+   .container p {
+      margin-left: 22%;
+   }
+   .part-right {
+      width: 100%;
+      height: 284px;
+      background-image: url(images/illustration-sign-up-mobile.svg);
+      background-size: contain;
+      background-position:top;
+      margin: 0;
+      padding: 0;
+   }
+   .part-left {
+      width: 85%;
+      padding: 0 5%;
+      margin-bottom: 30px;
+   }
+   .form {
+      margin: 40px 10%;
+   }
+   .container-success {
+      background-color: whitesmoke;
+      inset: 0;
+      border-radius: 0;
+   }
+   .container-success img {
+      margin: 40px 0 40px 0;
+   }
+   .container-success p {
+      margin-top: 30px;
+   }
+   .modal-button {
+      margin-top: 30px;
+   }
+}
+/* MOBILE */
+@media screen and (max-width: 431px) {
+   .container h1 {
+      margin: 40px 0 20px 10%;
+   }
+   .container p {
+      margin-left: 10%;
+   }
+}

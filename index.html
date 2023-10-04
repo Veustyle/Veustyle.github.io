@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+   <div class="container">
+
+      <div class="part-left">
+         <h1>Stay updated!</h1>
+
+         <p style="margin-bottom: 15px;">Join 60,000 product managers receiving monthly updated on:</p>
+
+         <p><img class="svg-yes" src="./assets/images/icon-list.svg" alt="alt">Product discovery and building what matters</p>
+
+         <p><img class="svg-yes" src="./assets/images/icon-list.svg" alt="alt">Measuring to ensure updates are a success</p>
+
+         <p><img class="svg-yes" src="./assets/images/icon-list.svg" alt="alt">And much more!</p>
+
+         <div class="form">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="enter your email">
+            <div class="errors">Valid email required</div>
+            <button>Subscribe to monthly newsletter</button>
+         </div>
+
+      </div>
+
+
+      <div class="part-right"></div>
+
+
+   </div>
+
+   <div class="container-success">
+      
+      <img src="assets/images/icon-success.svg" alt="alt" width="40px" height="40px">
+      
+      <h1>Thanks for subscribing!</h1>
+
+      <p>A confirmation email has been sent to <span class="span-email"></span>. Please open it and click the button inside to confirm your subscription</p>
+
+      <button class="modal-button">Dismiss message</button>
+   </div>
+</body>
+</html>
